@@ -4,8 +4,6 @@ Mapsforge rendertheme for OpenAndroMaps
 
 ![FzOAM.png](FzOAM.png)  
 
-
-
 <div align="center">
  
 ![Скриншот 1](http://images.vfl.ru/ii/1636991615/8131f0bb/36696490_s.jpg)
@@ -18,12 +16,9 @@ Mapsforge rendertheme for OpenAndroMaps
 >Hello, fellow walkers, runners, bikers, hikers and mountaineers!
 >
 >While searching for the best map and theme source I've found two great projects:
->1. OpenAndroMaps is already a huge one, with well tuned maps and many themes (Thank You!).
->Unfortunately in my opinion, none of them was easy to read and/or detailed enough.
->2. Freizeitkarte on the other hand isn't that widespread, but is an impressive project (Thank You!).
->It is far more detailed and has really good themes.
->The only major flaw was that the theme details appear too late when zooming.
-> 
+> 1. OpenAndroMaps is already a huge one, with well tuned maps and many themes (Thank You!). Unfortunately in my opinion, none of them was easy to read and/or detailed enough.
+> 2. Freizeitkarte on the other hand isn't that widespread, but is an impressive project (Thank You!). It is far more detailed and has really good themes. The only major flaw was that the theme details appear too late when zooming.
+
 > I wasn't brave enough to tune the zoom level for every detail,
 > but tried adding the useful landscape details to the feature rich Elements theme for OAM.
 > Most of the textures are directly borrowed or heavily inspired of FZK.
