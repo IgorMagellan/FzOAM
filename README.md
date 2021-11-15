@@ -30,10 +30,17 @@
 
 Source: [Locusmap forum](https://forum.locusmap.eu/index.php?topic=7043.0)
 
+Legend: [Key.pdf](Key.pdf)
+
 My changes:
 
 - Added Russian translation of menu items; added icon for Locus
 - put wood over grass
+
+Links:
+
+- OpenAndroMap
+- Freizeitkarte themes
 
  [Licenses](ReadMe.txt)  
 <!-- ![кокойто.png](/symbols/s_bicycle_shop.png) пример коммента -->
