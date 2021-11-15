@@ -1,10 +1,8 @@
 # FzOAM
 
-## Mapsforge rendertheme for OpenAndroMaps
-
-![FzOAM.png](FzOAM.png)  
-
 <div align="center">
+ 
+![FzOAM.png](FzOAM.png)  
  
 ![Скриншот 1](http://images.vfl.ru/ii/1636991615/8131f0bb/36696490_s.jpg)
 ![Скриншот 2](http://images.vfl.ru/ii/1636991615/85290755/36696493_s.jpg)
@@ -12,7 +10,9 @@
  
 </div>
 
-**_KillerBG wroted:_**
+### Mapsforge rendertheme for OpenAndroMaps
+
+_KillerBG wroted:_
 > Hello, fellow walkers, runners, bikers, hikers and mountaineers! While searching for the best map and theme source I've found two great projects:
 > 
 > 1. OpenAndroMaps is already a huge one, with well tuned maps and many themes (Thank You!). Unfortunately in my opinion, none of them was easy to read and/or detailed enough.
