@@ -1,2 +1,2 @@
 # FzOAM
- Rendertheme for mapsforge maps
+ Mapsforge rendertheme for OpenAndroMaps
