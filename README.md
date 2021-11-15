@@ -1,5 +1,7 @@
 # FzOAM
- Mapsforge rendertheme for OpenAndroMaps
+Mapsforge rendertheme for OpenAndroMaps
+
+![FzOAM.png](FzOAM.png) 
 
 My changes:
 
