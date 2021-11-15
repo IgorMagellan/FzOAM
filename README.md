@@ -39,8 +39,8 @@ My changes:
 
 Links:
 
-- OpenAndroMap
-- Freizeitkarte themes
+- [OpenAndroMap themes](https://www.openandromaps.org/en/legend/elevate-mountain-hike-theme)
+- [Freizeitkarte themes](http://www.freizeitkarte-osm.de/android/en/design.html)
 
  [Licenses](ReadMe.txt)  
 <!-- ![кокойто.png](/symbols/s_bicycle_shop.png) пример коммента -->
