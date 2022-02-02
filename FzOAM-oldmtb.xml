@@ -2260,7 +2260,7 @@ Magellan Changes:
 <!-- cycling-routes zoom 14+ -->
 	<rule e="way" k="tunnel" v="~|no" closed="no" zoom-min="14">
 		<rule e="way" k="cycleway_lane|cycleway_track" v="*">
-			<rule cat="mtb_routes" e="way" k="mtbnetwork" v="lay_mtb">
+			<rule cat="mtb_routes" e="way" k="network_mtb" v="lay_mtb">
 				<line stroke="#E0A3FF00" stroke-width="3.6" stroke-linecap="butt" />
 			</rule>
 			<rule cat="c_routes" e="way" k="network" v="ucn|lcn">
@@ -2277,7 +2277,7 @@ Magellan Changes:
 			</rule>
 		</rule>
 		<rule e="way" k="highway" v="tertiary|secondary|primary|tertiary_link|secondary_link|primary_link|construction|road|unclassified|residential|living_street|ford|pedestrian">
-			<rule cat="mtb_routes" e="way" k="mtbnetwork" v="lay_mtb">
+			<rule cat="mtb_routes" e="way" k="network_mtb" v="lay_mtb">
 				<line stroke="#E0A3FF00" stroke-width="2.65" stroke-linecap="butt" />
 			</rule>
 			<rule cat="c_routes" e="way" k="network" v="ucn|lcn">
@@ -2294,7 +2294,7 @@ Magellan Changes:
 			</rule>
 		</rule>
 		<rule e="way" k="highway" v="track|byway|service|cycleway|footway|path|steps|bridleway">
-			<rule cat="mtb_routes" e="way" k="mtbnetwork" v="lay_mtb">
+			<rule cat="mtb_routes" e="way" k="network_mtb" v="lay_mtb">
 				<line stroke="#E0A3FF00" stroke-width="2.55" stroke-linecap="butt" />
 				<line stroke="#A0FFFF88" stroke-width="1.6" stroke-linecap="butt" />
 			</rule>
@@ -3747,7 +3747,7 @@ Magellan Changes:
 					<pathText k="ref" font-style="bold" font-size="10" stroke="#215E8F" fill="#FFFFFF" stroke-width="3.2" dy="-6" repeat-start="200" repeat-gap="500" />
 				</rule>
 			</rule>
-
+			<rule cat="other_refs" e="way" k="hknetwork|network|network_mtb" v="~">
 				<rule e="way" k="highway" v="road|unclassified|residential|living_street|ford|pedestrian|track|byway|service|cycleway|footway|path|steps|bridleway|via_ferrata">
 					<rule e="any" k="*" v="*" zoom-max="15">
 						<pathText k="ref" priority="-10" font-style="normal" font-size="8" fill="#888888" stroke="#E5FFFFFF" stroke-width="2" dy="-2.5" repeat-start="50" repeat-gap="500" />
@@ -3756,7 +3756,7 @@ Magellan Changes:
 						<pathText k="ref" font-style="normal" font-size="9" fill="#777777" stroke="#E5FFFFFF" stroke-width="2.5" dy="-3" repeat-start="50" repeat-gap="500" />
 					</rule>
 				</rule>
-
+			</rule>
 			<rule e="way" k="*" v="*" zoom-min="12">
 				<rule e="way" k="highway" v="trunk|trunk_link|primary|primary_link|secondary|secondary_link|tertiary|tertiary_link|unclassified|residential|living_street|road|ford|pedestrian">
 					<rule cat="bike" e="any" k="*" v="*">
@@ -6162,46 +6162,46 @@ Magellan Changes:
 		<!-- captions -->
 		<rule e="way" k="hknetwork" v="lwn|uwn">
 			<rule e="any" k="*" v="*" zoom-max="14">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#999900" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#999900" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<pathText display="always" priority="10" k="ref_hike" font-style="bold" font-size="11" fill="#999900" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
+				<pathText display="always" priority="10" k="ref" font-style="bold" font-size="11" fill="#999900" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 			</rule>
 		</rule>
 		<rule e="way" k="hknetwork" v="rwn">
 			<rule e="any" k="*" v="*" zoom-max="14">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#009900" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#009900" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<pathText priority="10" k="ref_hike" font-style="bold" font-size="11" fill="#009900" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
+				<pathText priority="10" k="ref" font-style="bold" font-size="11" fill="#009900" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 			</rule>
 		</rule>
 		<rule e="way" k="hknetwork" v="nwn">
 			<rule e="any" k="*" v="*" zoom-max="9">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="4" repeat-start="0" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="4" repeat-start="0" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-max="11" zoom-min="10">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="15" repeat-gap="80" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="15" repeat-gap="80" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-max="14" zoom-min="12">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<pathText priority="10" k="ref_hike" font-style="bold" font-size="11" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
+				<pathText priority="10" k="ref" font-style="bold" font-size="11" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 			</rule>
 		</rule>
 		<rule e="way" k="hknetwork" v="iwn">
 			<rule e="any" k="*" v="*" zoom-max="9">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="4" repeat-start="0" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="4" repeat-start="0" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-max="11" zoom-min="10">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="15" repeat-gap="80" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="15" repeat-gap="80" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-max="14" zoom-min="12">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<pathText priority="10" k="ref_hike" font-style="bold" font-size="11" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
+				<pathText priority="10" k="ref" font-style="bold" font-size="11" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 			</rule>
 		</rule>
 
@@ -6272,49 +6272,49 @@ Magellan Changes:
 		<!-- captions -->
 		<rule e="way" k="hknetwork" v="ucn|lcn">
 			<rule e="any" k="*" v="*" zoom-max="14">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#12A5B3" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#12A5B3" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<pathText priority="10" k="ref_hike" font-style="bold" font-size="11" fill="#12A5B3" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
+				<pathText priority="10" k="ref" font-style="bold" font-size="11" fill="#12A5B3" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 			</rule>
 		</rule>
 		<rule e="way" k="hknetwork" v="rcn">
 			<rule e="any" k="*" v="*" zoom-max="11">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#6000DD" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="0" repeat-gap="80" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#6000DD" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="0" repeat-gap="80" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-max="14" zoom-min="12">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#6000DD" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#6000DD" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<pathText priority="10" k="ref_hike" font-style="bold" font-size="11" fill="#6000DD" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
+				<pathText priority="10" k="ref" font-style="bold" font-size="11" fill="#6000DD" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 			</rule>
 		</rule>
 		<rule e="way" k="hknetwork" v="ncn">
 			<rule e="any" k="*" v="*" zoom-max="9">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="4" repeat-start="0" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="4" repeat-start="0" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-max="11" zoom-min="10">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="0" repeat-gap="80" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="0" repeat-gap="80" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-max="14" zoom-min="12">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<pathText priority="10" k="ref_hike" font-style="bold" font-size="11" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
+				<pathText priority="10" k="ref" font-style="bold" font-size="11" fill="#CC0048" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 			</rule>
 		</rule>
 		<rule e="way" k="hknetwork" v="icn">
 			<rule e="any" k="*" v="*" zoom-max="9">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="4" repeat-start="0" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="4" repeat-start="0" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-max="11" zoom-min="10">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="0" repeat-gap="80" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="3.5" repeat-start="0" repeat-gap="80" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-max="14" zoom-min="12">
-				<pathText display="always" k="ref_hike" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<pathText priority="10" k="ref_hike" font-style="bold" font-size="11" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
+				<pathText priority="10" k="ref" font-style="bold" font-size="11" fill="#0040FF" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 			</rule>
 		</rule>
 
@@ -6336,7 +6336,7 @@ Magellan Changes:
 	</rule>
 
 <!-- MTB Routes -->
-	<rule cat="mtb" e="way" k="mtbnetwork" v="lay_mtb">
+	<rule cat="mtb" e="way" k="network_mtb" v="lay_mtb">
 		<rule cat="mtb_routes" e="way" k="*" v="*" zoom-max="13">
 			<line stroke="#A0A3FF00" stroke-width="3" stroke-linecap="butt" />
 		</rule>
@@ -6347,10 +6347,10 @@ Magellan Changes:
 		</rule>
 		<rule cat="mtb_routes" e="any" k="*" v="*">
 			<rule e="any" k="*" v="*" zoom-max="14" zoom-min="12">
-				<pathText display="always" k="ref_mtb" font-style="bold" font-size="9" fill="#6A8000" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
+				<pathText display="always" k="ref" font-style="bold" font-size="9" fill="#6A8000" stroke="#E5FFFFFF" stroke-width="2.5" dy="-5" repeat-start="30" repeat-gap="100" />
 			</rule>
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<pathText priority="10" k="ref_mtb" font-style="bold" font-size="11" fill="#6A8000" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
+				<pathText priority="10" k="ref" font-style="bold" font-size="11" fill="#6A8000" stroke="#E5FFFFFF" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 			</rule>
 		</rule>
 	</rule>
