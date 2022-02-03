@@ -18,7 +18,8 @@ Please have a look at ReadMe.txt for reuse and licenses of resources used in thi
 
 Magellan Changes:
 2021/04/29 - Added Russian translation of menu items; added icon for Locus
-2021/05/01 - put wood over grass
+2021/05/01 - Put wood over grass
+2022/02/02 - Fixed hiking, MTB, cycling routes due to recent OAM changes
 
 -->
 <rendertheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://mapsforge.org/renderTheme" xsi:schemaLocation="http://mapsforge.org/renderTheme https://raw.githubusercontent.com/mapsforge/mapsforge/master/resources/renderTheme.xsd" version="5" map-background="#F8F8F8" map-background-outside="#EEEEEE">
