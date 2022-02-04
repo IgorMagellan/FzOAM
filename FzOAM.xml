@@ -6269,7 +6269,7 @@ Magellan Changes:
 				<line stroke="#500040FF" stroke-width="1.4" stroke-linecap="butt" />
 			</rule>		
 		</rule>
-<!-- **** -->		
+	
 		<!-- captions -->
 		<rule e="way" k="network" v="ocn|lcn">
 			<rule e="any" k="*" v="*" zoom-max="13">
@@ -6334,7 +6334,6 @@ Magellan Changes:
 				<caption k="name" display="always" priority="-14" font-style="bold" font-size="14" fill="#0000DD" stroke="#E5FFFFFF" stroke-width="2" />
 			</rule>
 		</rule>				
-<!-- **** -->
 
 		<!-- captions -->
 		<rule e="way" k="hknetwork" v="ocn|lcn">
@@ -6434,9 +6433,6 @@ Magellan Changes:
 			<pathText priority="10" k="ref_mtb" font-style="bold" font-size="9" fill="#FFFFFF" stroke="#009900" stroke-width="2.5" dy="-2" repeat-start="50" repeat-gap="300" />
 		</rule>
 	</rule>
-
-
-
 
 <!-- public transport network -->
 	<rule cat="pt_network" e="any" k="*" v="*">

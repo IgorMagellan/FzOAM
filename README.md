@@ -35,7 +35,8 @@ Legend: [Key.pdf](Key.pdf)
 My changes:
 
 - Added Russian translation of menu items; added icon for Locus
-- put wood over grass
+- Put wood over grass
+- Fixed hiking, cycling and MTB routes due to recent OAM changes. I couldn't check until the end.
 
 Links:
 
