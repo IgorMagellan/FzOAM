@@ -32,7 +32,7 @@ Source: [Locusmap forum](https://forum.locusmap.eu/index.php?topic=7043.0)
 
 Legend: [Key.pdf](Key.pdf)
 
-Original [Readme.txt](Readme.txt)
+Original [Readme.txt](ReadMe.txt)
 
 My changes:
 
